@@ -21,7 +21,12 @@ jobs:
       - name: Presentación
         run: echo "Mi nombre es ${{ env.nombres }} ${{ env.apellidos }} y tengo ${{ env.edad }} años"
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
+      # Paso 2: Datos generales
+      - name: Datos generales
+        run: echo "Carrera de ingeniería de sistemas"
+
+      
+
     
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
