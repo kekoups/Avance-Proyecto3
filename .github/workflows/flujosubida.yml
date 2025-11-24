@@ -34,5 +34,11 @@ jobs:
           echo "user: $user"
           echo "password: $password"
 
+      # Paso 4: Variables abiertas
+      - name: Variables abiertas
+        env:
+          version_de_proyecto: "3.0"
+        run: |
+          echo "Versión de mi proyecto: ${{ env.version_de_proyecto }}"
     
     
